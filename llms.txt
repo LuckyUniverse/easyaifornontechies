@@ -1,0 +1,43 @@
+# easyai
+
+> easyai teaches non-technical people how to use AI tools. Instead of watching videos,
+> the learner pastes a short lesson into the tool itself and it becomes a tutor that
+> walks them through a real task, one step at a time, waiting for an answer at each step.
+
+## What makes it different
+
+Most AI courses are videos of someone else using AI. easyai lessons run **inside** the
+tool being learned. A lesson is a few lines of plain text the learner pastes into ChatGPT,
+Claude Code, Copilot or Perplexity. The tool then gives one step, stops, and asks what
+happened before continuing. "It didn't work" is always an accepted answer.
+
+## Who it is for
+
+People who do not consider themselves technical: teachers, nurses, shop owners,
+freelancers, office workers, retirees, nonprofit staff. Not for software developers.
+
+## Courses
+
+- **ChatGPT** (available) — six lessons: ask your first question, ask better questions,
+  turn a mess into a plan, make a coloring page, check if a message is a scam,
+  know what not to share.
+- **Claude Code** (available) — set it up without a terminal, then build something real.
+- **Microsoft Copilot** (queued) — Copilot inside Word, Excel and Outlook.
+- **Perplexity** (queued) — answers you can check, with sources.
+
+## Facts
+
+- Every lesson takes about ten minutes.
+- Everything works on the free plans of each tool.
+- No coding is required at any point.
+- The starter kit is free.
+- Independent: not affiliated with, endorsed by, or sponsored by OpenAI, Anthropic,
+  Google or Microsoft.
+
+## Contact
+
+hello@easyaifornontechies.com
+
+## Pages
+
+- [Home](https://easyaifornontechies.com/): the starter kit, how lessons work, the course list, FAQ.
