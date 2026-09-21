@@ -51,6 +51,36 @@
     --line:#272C32; --sky:#54B6F5; --sky-deep:#7CC8F8;
   }
 
+  /* Accessibility.
+     - A skip link: without one, a keyboard user tabs the whole nav on every page.
+     - An explicit focus ring: the browser default works, but it is browser-dependent
+       and sits at 1px. outline-offset puts ours on the page background, where
+       --sky-deep measures 5.7:1.
+     - prefers-reduced-motion: the page had transitions and smooth scrolling with no
+       opt-out, which is a genuine problem for vestibular disorders. */
+  .skip {
+    position:absolute; left:16px; top:-100px; z-index:100;
+    background:var(--ink); color:var(--page); padding:12px 18px;
+    border-radius:0 0 10px 10px; font-size:15px; font-weight:700; text-decoration:none;
+    transition:top .15s ease;
+  }
+  .skip:focus { top:0; }
+
+  :focus-visible {
+    outline:3px solid var(--sky-deep);
+    outline-offset:2px;
+    border-radius:3px;
+  }
+  .darkpanel :focus-visible, .panel :focus-visible { outline-color:#FFFFFF; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior:auto; }
+    *, *::before, *::after {
+      animation-duration:.01ms !important; animation-iteration-count:1 !important;
+      transition-duration:.01ms !important; scroll-behavior:auto !important;
+    }
+  }
+
   * { box-sizing:border-box; }
   html { scroll-behavior:smooth; }
   body {
@@ -372,6 +402,7 @@
 </style>
 </head>
 <body>
+<a class="skip" href="#content">Skip to content</a>
 <header id="hdr"><div class="wrap bar">
   <a class="mark" href="/" aria-label="easyai home"><svg viewBox="0 7 32 16" fill="none" aria-hidden="true"><circle cx="16" cy="15.2" r="8" fill="var(--sky)"/><path d="M3 20.2H29" stroke="var(--ink)" stroke-width="2.9" stroke-linecap="round"/></svg><span class="name">easy<i>ai</i></span></a>
   <nav>
@@ -382,7 +413,7 @@
   </nav>
 </div></header>
 
-<main class="doc">
+<main class="doc" id="content">
   <p class="crumb"><a href="/">easyai</a> &rsaquo; How to install Claude Code</p>
   <h1>How to install Claude Code</h1>
   <div class="answer"><strong>The fastest way is the desktop app</strong>, not the terminal. Download it from claude.com/download, open the file, sign in with a free Claude account, and ask it to list the files in a folder. That takes about five minutes and needs no commands at all. The terminal version is below if you want it.</div>
