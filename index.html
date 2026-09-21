@@ -148,6 +148,37 @@
   .truth h3 { font-size:1.05rem; font-weight:700; letter-spacing:-.02em; margin-bottom:8px; }
   .truth p { font-size:15px; color:var(--ink-70); }
 
+  /* how it works */
+  .compare { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--line);
+    border:1px solid var(--line); border-radius:var(--r); overflow:hidden; margin-top:44px; }
+  @media (max-width:760px) { .compare { grid-template-columns:1fr; } }
+  .compare .col { background:var(--page); padding:28px 26px; }
+  .compare .col.them { background:var(--surface); }
+  .compare h3 { font-size:1.02rem; font-weight:700; letter-spacing:-.02em; margin-bottom:16px; }
+  .compare .col.them h3 { color:var(--ink-45); }
+  .compare ul { list-style:none; margin:0; padding:0; display:grid; gap:11px; }
+  .compare li { font-size:15px; color:var(--ink-70); padding-left:22px; position:relative; line-height:1.5; }
+  .compare li::before { position:absolute; left:0; top:0; font-weight:700; }
+  .compare .them li::before { content:"\2715"; color:var(--ink-45); font-size:12px; top:2px; }
+  .compare .us li::before { content:"\2713"; color:var(--sky-deep); font-size:13px; top:1px; }
+
+  .mech { display:grid; grid-template-columns:repeat(3,1fr); gap:34px; margin-top:52px; }
+  @media (max-width:760px) { .mech { grid-template-columns:1fr; gap:26px; } }
+  .mech .n { font-size:12px; font-weight:700; letter-spacing:.08em; color:var(--sky-deep); margin-bottom:9px; }
+  .mech h3 { font-size:1.05rem; letter-spacing:-.025em; margin-bottom:7px; }
+  .mech p { font-size:15px; color:var(--ink-70); line-height:1.55; }
+
+  .exchange {
+    margin-top:44px; background:var(--surface); border:1px solid var(--line);
+    border-radius:var(--r); padding:28px 30px; max-width:680px;
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:14px; line-height:1.75;
+  }
+  .exchange .who { color:var(--ink-45); }
+  .exchange .stop { color:var(--sky-deep); font-weight:700; }
+  .exchange .you { color:var(--ink); font-weight:700; }
+  .exchange-note { margin-top:18px; font-size:15px; color:var(--ink-70); max-width:60ch; }
+  .exchange-note b { color:var(--ink); }
+
   /* kit */
   .kitband { background:var(--surface); }
   .kit { display:grid; grid-template-columns:1.05fr .95fr; gap:64px; align-items:start; }
@@ -278,7 +309,8 @@
     <span class="name">easy<i>ai</i></span>
   </a>
   <nav>
-    <a class="link" href="#kit">The kit</a>
+    <a class="link" href="#how">How it works</a>
+      <a class="link" href="#kit">The kit</a>
     <a class="link" href="#learn">What you learn</a>
       <a class="link" href="#courses">Courses</a>
     <a class="link" href="#faq">Questions</a>
@@ -325,19 +357,20 @@
       <div class="inner">
         <h1>You're not behind.<br>You were never shown.</h1>
         <p class="sub">
-          Everyone has AI on their desk. Almost nobody was taught to use it.
-          Ten-minute lessons, in the plainest English anyone has managed yet.
+          Not another video course. You paste a short lesson straight into ChatGPT
+          and it becomes a patient tutor — one step at a time, on your own real work.
+          Ten minutes. Works on the free plan.
         </p>
         <div class="ctas">
           <a class="btn btn-dark" href="#kit">Get the free kit</a>
-          <a class="btn btn-light" href="#learn">How it works</a>
+          <a class="btn btn-light" href="#how">See how it works</a>
         </div>
       </div>
     </div>
 
     <div class="strip">
-      <span><b>10 min</b> a lesson</span><span><b>Free</b> forever</span>
-      <span><b>Zero</b> code, ever</span><span><b>Plain English</b>, always</span>
+      <span><b>10 min</b> a lesson</span><span>Works on the <b>free plans</b></span>
+      <span>You learn <b>inside the tool</b></span><span><b>Plain English</b>, always</span>
     </div>
   </div>
 
@@ -345,10 +378,10 @@
     <p class="label">The real problem</p>
     <p class="big2">Nobody ever sat down and showed you.</p>
     <p class="rest">
-      Everything written about AI is written by people who already understand it, for
-      people who already understand it. So you tried it once, got something bland back,
-      and quietly closed the tab. That isn't a you problem. That's a teaching problem —
-      and it's the only one we're trying to solve.
+      You've already met ChatGPT. That was never the problem. The problem is that
+      everything written about it is written by people who already understand it — so you
+      typed something, got a bland answer back, and quietly closed the tab. That isn't you
+      failing. It's a teaching problem, and it's the only one we're trying to solve.
     </p>
     <div class="truths">
       <div class="truth"><h3>No manual arrived</h3><p>Everyone says it changes everything. Nobody says what to do with it on a Tuesday morning.</p></div>
@@ -357,11 +390,57 @@
     </div>
   </div></section>
 
+  <section id="how"><div class="wrap">
+    <p class="label">How this is different</p>
+    <h2 class="big">Most courses show you. This one sits with you.</h2>
+    <p class="rest" style="margin-top:22px;">
+      Every other AI course is a video of someone else using AI. You watch their screen,
+      following their example. At the end you have notes — and the first time you try it on
+      your own work, you're alone again.
+    </p>
+
+    <div class="compare">
+      <div class="col them">
+        <h3>Watching a course</h3>
+        <ul><li>Someone else's screen</li><li>Someone else's example</li>
+        <li>It never knows you got stuck</li><li>You finish with notes</li></ul>
+      </div>
+      <div class="col us">
+        <h3>Learning inside the tool</h3>
+        <ul><li>The tutor is in ChatGPT with you</li><li>Your real task, in your own words</li>
+        <li>It stops and asks what happened</li><li>You finish with the thing done</li></ul>
+      </div>
+    </div>
+
+    <div class="mech">
+      <div><div class="n">01</div><h3>Copy the lesson</h3>
+        <p>A few lines of plain text. Nothing to download, nothing to install.</p></div>
+      <div><div class="n">02</div><h3>Paste it in</h3>
+        <p>Into ChatGPT, Claude Code, Copilot — whichever tool the lesson is about.</p></div>
+      <div><div class="n">03</div><h3>It becomes your tutor</h3>
+        <p>One step. Then it stops and waits for you. It will not run ahead.</p></div>
+    </div>
+
+    <div class="exchange">
+      <span class="who">Tutor</span>&nbsp;&nbsp;Paste in an email you've written before.<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Any one — it doesn't have to be good.<br><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="stop">STOP:</span> Did that come back sounding<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;like you, or too formal?<br><br>
+      <span class="you">You</span>&nbsp;&nbsp;&nbsp;&nbsp;Too formal<br><br>
+      <span class="who">Tutor</span>&nbsp;&nbsp;Good — that's the useful answer.<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Let's fix the one thing making it stiff…
+    </div>
+    <p class="exchange-note">
+      <b>That STOP is the whole difference.</b> It will not move on until you answer — and
+      &ldquo;it didn't work&rdquo; is always one of the answers.
+    </p>
+  </div></section>
+
   <section class="kitband" id="kit"><div class="wrap kit">
     <div>
       <p class="label">Start here · free</p>
       <h2 class="big">The ten-minute starter kit</h2>
-      <p class="intro">Six things that take you from &ldquo;I don't know where to begin&rdquo; to a real, finished result today. Genuinely useful on its own, and free for good.</p>
+      <p class="intro">Six short lessons you paste straight into ChatGPT. Each one turns it into a tutor that walks you through a real task, waits for your answer, and fixes it when it goes wrong. Free for good — and it works on the free plan.</p>
       <ol class="k">
         <li><div><b>Your first win, in ten minutes</b><span>One guided walkthrough, start to finish, before the kettle boils.</span></div></li>
         <li><div><b>The one-page asking sheet</b><span>Four things to include in any request. Print it. Stop getting mush back.</span></div></li>
@@ -463,6 +542,10 @@
   <section id="faq"><div class="wrap">
     <p class="label">Questions</p>
     <div class="faq">
+      <details><summary>How does a lesson actually work?<span class="pm"></span></summary>
+        <p>You copy a few lines of text and paste them into ChatGPT. That turns it into a tutor for that one lesson: it gives you a step, waits while you do it, asks what happened, and adapts to your answer. Nothing to install, and nothing to log into except the tool itself.</p></details>
+      <details><summary>What if it starts running ahead of me?<span class="pm"></span></summary>
+        <p>Every lesson ships with one line you can paste to put it back: <em>&ldquo;Go back to being the tutor. One step at a time. I was on step 3.&rdquo;</em> We test each lesson for exactly that before it goes out.</p></details>
       <details><summary>Do I have to pay for an AI tool to follow along?<span class="pm"></span></summary>
         <p>No. Everything in the starter kit works on the free versions. If a paid plan is ever genuinely worth it, we'll say so plainly and explain exactly what it buys you.</p></details>
       <details><summary>Do I need to install anything?<span class="pm"></span></summary>
