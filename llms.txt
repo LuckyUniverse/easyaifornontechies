@@ -57,5 +57,8 @@ hello@easyaifornontechies.com
   why it invents case citations, and the drafting work it genuinely does well.
 - [ChatGPT for accountants](https://easyaifornontechies.com/chatgpt-for-accountants/):
   it cannot do arithmetic reliably; what it can do is the rest of the job.
+- [ChatGPT for nurses](https://easyaifornontechies.com/chatgpt-for-nurses/):
+  no patient identifiers and no drug doses; what it does well is charting language,
+  plain-language patient handouts and difficult emails.
 - [ChatGPT for teachers](https://easyaifornontechies.com/chatgpt-for-teachers/):
   differentiation in minutes, and why an AI detector score is not evidence.
