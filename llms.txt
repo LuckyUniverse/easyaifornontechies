@@ -41,3 +41,21 @@ hello@easyaifornontechies.com
 ## Pages
 
 - [Home](https://easyaifornontechies.com/): the starter kit, how lessons work, the course list, FAQ.
+- [The free ChatGPT course](https://easyaifornontechies.com/chatgpt-lessons/): all six lessons
+  described; lesson one in full on the page.
+- [How to write ChatGPT prompts](https://easyaifornontechies.com/how-to-write-chatgpt-prompts/):
+  lesson two. The four additions that turn a vague request into a good answer: who it is for,
+  what good looks like, what to avoid, something to look at.
+- [Use ChatGPT to make a plan](https://easyaifornontechies.com/use-chatgpt-to-make-a-plan/):
+  lesson three. Type a dreaded task messily and get it back organised by day; ask what is wrong
+  with the plan rather than whether it is good.
+- [How to install Claude Code](https://easyaifornontechies.com/how-to-install-claude-code/):
+  the desktop-app route, about five minutes, no terminal required.
+- [ChatGPT for nonprofits](https://easyaifornontechies.com/chatgpt-for-nonprofits/):
+  donor thank-yous, grant drafts, and what must never be pasted in.
+- [ChatGPT for lawyers](https://easyaifornontechies.com/chatgpt-for-lawyers/):
+  why it invents case citations, and the drafting work it genuinely does well.
+- [ChatGPT for accountants](https://easyaifornontechies.com/chatgpt-for-accountants/):
+  it cannot do arithmetic reliably; what it can do is the rest of the job.
+- [ChatGPT for teachers](https://easyaifornontechies.com/chatgpt-for-teachers/):
+  differentiation in minutes, and why an AI detector score is not evidence.
