@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChatGPT for Lawyers: What&#x27;s Safe and What Isn&#x27;t | easyai</title>
+<meta name="description" content="A plain-English guide for lawyers using ChatGPT. Why it invents case citations, what you must never paste in, and the drafting and summarising work it genuinely does well.">
+<link rel="canonical" href="https://easyaifornontechies.com/chatgpt-for-lawyers/">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="theme-color" content="#1B8BE0">
+<meta property="og:site_name" content="easyai">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://easyaifornontechies.com/chatgpt-for-lawyers/">
+<meta property="og:title" content="ChatGPT for Lawyers: What&#x27;s Safe and What Isn&#x27;t | easyai">
+<meta property="og:description" content="A plain-English guide for lawyers using ChatGPT. Why it invents case citations, what you must never paste in, and the drafting and summarising work it genuinely does well.">
+<meta property="og:image" content="https://easyaifornontechies.com/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ChatGPT for Lawyers: What&#x27;s Safe and What Isn&#x27;t | easyai">
+<meta name="twitter:description" content="A plain-English guide for lawyers using ChatGPT. Why it invents case citations, what you must never paste in, and the drafting and summarising work it genuinely does well.">
+<meta name="twitter:image" content="https://easyaifornontechies.com/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%228%22%20fill%3D%22%230D0D0D%22%2F%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2214.5%22%20r%3D%227.5%22%20fill%3D%22%231B8BE0%22%2F%3E%3Cpath%20d%3D%22M4.5%2019.8H27.5%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%223.2%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://easyaifornontechies.com/#org","name":"easyai","url":"https://easyaifornontechies.com/","logo":{"@type":"ImageObject","url":"https://easyaifornontechies.com/og.png"}},{"@type":"WebPage","@id":"https://easyaifornontechies.com/chatgpt-for-lawyers/#page","url":"https://easyaifornontechies.com/chatgpt-for-lawyers/","name":"ChatGPT for Lawyers: What's Safe and What Isn't | easyai","description":"A plain-English guide for lawyers using ChatGPT. Why it invents case citations, what you must never paste in, and the drafting and summarising work it genuinely does well.","isPartOf":{"@id":"https://easyaifornontechies.com/#site"},"inLanguage":"en-US","breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"easyai","item":"https://easyaifornontechies.com/"},{"@type":"ListItem","position":2,"name":"ChatGPT for lawyers","item":"https://easyaifornontechies.com/chatgpt-for-lawyers/"}]}},{"@type":"FAQPage","@id":"https://easyaifornontechies.com/chatgpt-for-lawyers/#faq","mainEntity":[{"@type":"Question","name":"Can lawyers use ChatGPT?","acceptedAnswer":{"@type":"Answer","text":"Yes, and many do, but two rules come first. Never cite an authority it produces without pulling the case up yourself in a real database, because it fabricates citations that look correct. And never paste privileged or client-identifying material until your firm has a policy covering it. Within those limits it is genuinely useful for drafting, summarising and plain-English translation."}},{"@type":"Question","name":"Does ChatGPT make up case law?","acceptedAnswer":{"@type":"Answer","text":"Yes. It will produce citations with a correct-looking reporter, plausible parties and a plausible year for cases that do not exist. Lawyers in several jurisdictions have been sanctioned for filing briefs containing fabricated citations. Treat every authority it gives you as a rumour until you have found it yourself."}},{"@type":"Question","name":"Is it safe to put client information into ChatGPT?","acceptedAnswer":{"@type":"Answer","text":"Not without your firm deciding that first. Privilege, professional secrecy and data protection duties all still apply. In practice you rarely need the identifying details: describe the situation with the parties replaced by placeholders and you get the same quality of answer."}},{"@type":"Question","name":"What is ChatGPT actually reliable for in legal work?","acceptedAnswer":{"@type":"Answer","text":"Anything where you supply the source material. Summarising a document you paste in, translating your own drafting into plain English, building a timeline from facts you give it, preparing questions for a meeting. It is reliable reading your material and unreliable recalling its own."}},{"@type":"Question","name":"Can it replace legal research?","acceptedAnswer":{"@type":"Answer","text":"No. It is not a legal research database and does not reliably know current law. Use it to understand a document you already have, not to find out what the law is."}},{"@type":"Question","name":"Is Claude better than ChatGPT for legal work?","acceptedAnswer":{"@type":"Answer","text":"Some firms prefer Claude for long documents and it handles large files comfortably, but the same two rules apply to both. Neither is a substitute for a research database, and neither should see privileged material before your firm has decided that."}},{"@type":"Question","name":"Do I have to tell clients I used AI?","acceptedAnswer":{"@type":"Answer","text":"That depends on your jurisdiction and your retainer, and some regulators have begun issuing guidance. Check your own rules. The practical position is that work you have drafted, checked and taken responsibility for is your work."}}]},{"@type":"HowTo","name":"Turn a legal clause into plain English with ChatGPT","description":"A guided lesson that runs inside ChatGPT and produces a client-facing explanation of a clause you drafted.","totalTime":"PT10M","step":[{"@type":"HowToStep","position":1,"name":"Paste one clause, anonymised","text":"Replace names and identifying details with [PARTY A] and [PARTY B] before pasting."},{"@type":"HowToStep","position":2,"name":"Check the plain-English version","text":"Read it back and decide whether it still says what you meant."},{"@type":"HowToStep","position":3,"name":"Ask what a client would misunderstand","text":"Surfaces the part of the clause that reads differently to a non-lawyer."},{"@type":"HowToStep","position":4,"name":"Ask what was ambiguous","text":"A fresh reader on your own drafting is useful for reasons that have nothing to do with speed."}]}]}</script>
+<style>
+  /* ------------------------------------------------------------------
+     PALETTE — blue skies. Keeps OpenAI's structural language (monochrome
+     base, lots of white, ink buttons, a single rationed accent) but the
+     accent is sky, not their green. --sky is the graphic tone; --sky-deep
+     is the text-safe one, used anywhere the accent carries small type.
+  ------------------------------------------------------------------ */
+  :root {
+    --page:#FFFFFF; --surface:#F5F8FB; --card:#FFFFFF;
+    --ink:#0D0D0D; --ink-70:#3D4653; --ink-45:#6B7685;
+    --line:#E3E9EF;
+    --sky:#1B8BE0; --sky-deep:#0A6AB4; --sky-soft:#BFE0F5; --sand:#EFE2C8;
+    --r:20px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --page:#0D0D0D; --surface:#14171A; --card:#1A1D21;
+      --ink:#F5F7FA; --ink-70:#AEB8C4; --ink-45:#8792A0;
+      --line:#272C32;
+      --sky:#54B6F5; --sky-deep:#7CC8F8;
+    }
+  }
+  :root[data-theme="dark"] {
+    --page:#0D0D0D; --surface:#14171A; --card:#1A1D21;
+    --ink:#F5F7FA; --ink-70:#AEB8C4; --ink-45:#8792A0;
+    --line:#272C32; --sky:#54B6F5; --sky-deep:#7CC8F8;
+  }
+
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body {
+    margin:0; background:var(--page); color:var(--ink);
+    font-family:"Plus Jakarta Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:17px; line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3 { margin:0; font-weight:800; letter-spacing:-.04em; line-height:1.05; }
+  p { margin:0; }
+  a { color:inherit; }
+  .wrap { max-width:1240px; margin:0 auto; padding:0 24px; }
+  @media (max-width:640px) { .wrap { padding:0 18px; } }
+
+  .label {
+    font-size:11.5px; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
+    color:var(--ink-45); margin-bottom:20px; display:flex; align-items:center; gap:10px;
+  }
+  .label::before { content:""; width:22px; height:1.5px; background:var(--sky); }
+
+  /* wordmark */
+  /* the sun sits on top of the word. The viewBox is cropped to "0 7 32 16" —
+     the artwork's real bounds — so the lockup closes up instead of carrying
+     the empty upper and lower thirds of a 32x32 box. */
+  .mark { position:relative; display:inline-block; padding-top:17px; text-decoration:none; line-height:1; }
+  .mark svg { position:absolute; top:0; left:50%; transform:translateX(-50%); width:32px; height:16px; display:block; }
+  .mark .name { font-size:23px; font-weight:800; letter-spacing:-.055em; color:var(--ink); }
+  .mark .name i { font-style:normal; color:var(--sky); }
+
+  /* header */
+  header {
+    position:sticky; top:0; z-index:20; background:color-mix(in srgb, var(--page) 86%, transparent);
+    backdrop-filter:saturate(180%) blur(14px); border-bottom:1px solid transparent; transition:border-color .2s;
+  }
+  header.stuck { border-bottom-color:var(--line); }
+  .bar { display:flex; align-items:center; justify-content:space-between; gap:20px; height:72px; }
+  nav { display:flex; align-items:center; gap:30px; }
+  nav a.link { font-size:14.5px; font-weight:500; color:var(--ink-70); text-decoration:none; }
+  nav a.link:hover { color:var(--ink); }
+  @media (max-width:880px) { nav .link { display:none; } }
+
+  /* buttons */
+  .btn {
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    padding:15px 30px; border-radius:999px; font:inherit; font-size:16px; font-weight:700;
+    letter-spacing:-.01em; text-decoration:none; border:2px solid transparent; cursor:pointer; white-space:nowrap;
+    transition:opacity .15s, background .15s, border-color .15s;
+  }
+  .btn-sm { padding:10px 20px; font-size:14.5px; }
+  .btn-dark { background:var(--ink); color:var(--page); }
+  .btn-dark:hover { opacity:.86; }
+  .btn-light { background:rgba(255,255,255,.94); color:#0D0D0D; border-color:rgba(255,255,255,.94); }
+  .btn-light:hover { background:#fff; }
+  .btn-ghost { border-color:var(--line); color:var(--ink); }
+  .btn-ghost:hover { border-color:var(--ink); }
+  .btn:disabled { opacity:.55; cursor:default; }
+
+  /* hero panel */
+  .panel {
+    position:relative; border-radius:var(--r); overflow:hidden; min-height:640px;
+    display:flex; align-items:flex-start; justify-content:center; text-align:center;
+    padding:88px 28px 44px;
+  }
+  @media (max-width:760px) {
+    .panel { min-height:600px; padding:46px 18px 34px; border-radius:14px; }
+    /* On a tall narrow panel the horizon rides up into the copy, so lift a
+       soft scrim over the art. Desktop is untouched. */
+    .panel::before {
+      content:""; position:absolute; inset:0; pointer-events:none;
+      background:linear-gradient(to bottom,
+        rgba(255,255,255,.88) 0%, rgba(255,255,255,.80) 34%,
+        rgba(255,255,255,.42) 54%, rgba(255,255,255,0) 68%);
+    }
+  }
+  .panel svg.art { position:absolute; inset:0; width:100%; height:100%; }
+  .panel .inner { position:relative; max-width:790px; }
+  .panel h1 { font-size:clamp(1.95rem,6.3vw,4.6rem); letter-spacing:-.05em; color:#0D0D0D; }
+  .panel .sub {
+    margin:24px auto 0; max-width:50ch; font-size:clamp(1rem,1.5vw,1.14rem);
+    color:#2B2B33; font-weight:500; line-height:1.5;
+  }
+  .ctas { margin-top:34px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+
+  .strip {
+    display:flex; gap:36px; justify-content:center; flex-wrap:wrap; padding:28px 0 0;
+    font-size:14px; font-weight:600; color:var(--ink-45);
+  }
+  .strip b { color:var(--ink); font-weight:700; }
+
+  section { padding:108px 0; }
+  @media (max-width:700px) { section { padding:72px 0; } }
+  .rule { height:1px; background:var(--line); }
+  h2.big { font-size:clamp(2rem,4.6vw,3.2rem); max-width:18ch; }
+
+  /* statement */
+  .statement .big2 {
+    font-size:clamp(1.5rem,3.4vw,2.3rem); font-weight:700; letter-spacing:-.035em;
+    line-height:1.26; max-width:20ch;
+  }
+  .statement .rest { margin-top:24px; font-size:1.05rem; line-height:1.65; color:var(--ink-70); max-width:52ch; }
+  .truths { margin-top:54px; display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border-top:1px solid var(--line); }
+  @media (max-width:820px) { .truths { grid-template-columns:1fr; } }
+  .truth { background:var(--page); padding:28px 24px 28px 0; }
+  @media (min-width:821px) { .truth { padding-left:24px; } .truth:first-child { padding-left:0; } }
+  .truth h3 { font-size:1.05rem; font-weight:700; letter-spacing:-.02em; margin-bottom:8px; }
+  .truth p { font-size:15px; color:var(--ink-70); }
+
+  /* how it works */
+  .compare { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--line);
+    border:1px solid var(--line); border-radius:var(--r); overflow:hidden; margin-top:44px; }
+  @media (max-width:760px) { .compare { grid-template-columns:1fr; } }
+  .compare .col { background:var(--page); padding:28px 26px; }
+  .compare .col.them { background:var(--surface); }
+  .compare h3 { font-size:1.02rem; font-weight:700; letter-spacing:-.02em; margin-bottom:16px; }
+  .compare .col.them h3 { color:var(--ink-45); }
+  .compare ul { list-style:none; margin:0; padding:0; display:grid; gap:11px; }
+  .compare li { font-size:15px; color:var(--ink-70); padding-left:22px; position:relative; line-height:1.5; }
+  .compare li::before { position:absolute; left:0; top:0; font-weight:700; }
+  .compare .them li::before { content:"\2715"; color:var(--ink-45); font-size:12px; top:2px; }
+  .compare .us li::before { content:"\2713"; color:var(--sky-deep); font-size:13px; top:1px; }
+
+  .mech { display:grid; grid-template-columns:repeat(3,1fr); gap:34px; margin-top:52px; }
+  @media (max-width:760px) { .mech { grid-template-columns:1fr; gap:26px; } }
+  .mech .n { font-size:12px; font-weight:700; letter-spacing:.08em; color:var(--sky-deep); margin-bottom:9px; }
+  .mech h3 { font-size:1.05rem; letter-spacing:-.025em; margin-bottom:7px; }
+  .mech p { font-size:15px; color:var(--ink-70); line-height:1.55; }
+
+  .exchange {
+    margin-top:44px; background:var(--surface); border:1px solid var(--line);
+    border-radius:var(--r); padding:28px 30px; max-width:680px;
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:14px; line-height:1.75;
+  }
+  .exchange .who { color:var(--ink-45); }
+  .exchange .stop { color:var(--sky-deep); font-weight:700; }
+  .exchange .you { color:var(--ink); font-weight:700; }
+  .exchange-note { margin-top:18px; font-size:15px; color:var(--ink-70); max-width:60ch; }
+  .exchange-note b { color:var(--ink); }
+
+  /* kit */
+  .kitband { background:var(--surface); }
+  .kit { display:grid; grid-template-columns:1.05fr .95fr; gap:64px; align-items:start; }
+  @media (max-width:920px) { .kit { grid-template-columns:1fr; gap:40px; } }
+  .kit .intro { color:var(--ink-70); max-width:44ch; margin-top:16px; }
+  ol.k { list-style:none; margin:32px 0 0; padding:0; counter-reset:k; }
+  ol.k li { counter-increment:k; display:flex; gap:16px; padding:15px 0; border-top:1px solid var(--line); }
+  ol.k li:last-child { border-bottom:1px solid var(--line); }
+  ol.k li::before {
+    content:counter(k,decimal-leading-zero); flex:none; width:26px;
+    font-size:12px; font-weight:700; color:var(--sky-deep); padding-top:4px;
+  }
+  ol.k b { display:block; font-size:15.5px; font-weight:700; letter-spacing:-.015em; margin-bottom:2px; }
+  ol.k span { font-size:14.5px; color:var(--ink-70); line-height:1.55; }
+
+  .signupcard {
+    position:sticky; top:92px; background:var(--card); border:1px solid var(--line);
+    border-radius:var(--r); padding:30px; box-shadow:0 1px 2px rgba(13,13,13,.04), 0 14px 40px -20px rgba(13,13,13,.18);
+  }
+  @media (max-width:920px) { .signupcard { position:static; } }
+  .signupcard h3 { font-size:1.3rem; margin-bottom:8px; }
+  .signupcard > p { color:var(--ink-70); font-size:15px; }
+
+  /* form */
+  .capture { margin-top:20px; }
+  .capture input {
+    width:100%; padding:14px 16px; font:inherit; font-size:16px; color:var(--ink);
+    background:var(--page); border:1.5px solid var(--line); border-radius:12px; outline:none;
+  }
+  .capture input:focus { border-color:var(--sky); box-shadow:0 0 0 3px color-mix(in srgb, var(--sky) 18%, transparent); }
+  .capture input::placeholder { color:var(--ink-45); }
+  .capture .btn { width:100%; margin-top:10px; border-radius:12px; }
+  .capture-note { margin-top:12px; font-size:13px; color:var(--ink-45); }
+  .form-msg { font-size:14.5px; margin-top:12px; font-weight:500; display:none; }
+  .form-msg.show { display:block; }
+  .form-msg.ok { color:var(--sky-deep); }
+  .form-msg.warn { color:var(--ink-70); }
+
+  /* skills */
+  .curric { display:grid; grid-template-columns:repeat(2,1fr); gap:0 60px; margin-top:44px; }
+  @media (max-width:820px) { .curric { grid-template-columns:1fr; } }
+  .step { display:flex; gap:18px; padding:28px 0; border-top:1px solid var(--line); }
+  .step .n { flex:none; width:24px; font-size:12px; font-weight:700; color:var(--sky); padding-top:5px; }
+  .step h3 { font-size:1.2rem; letter-spacing:-.028em; margin-bottom:8px; }
+  .step p { font-size:15.5px; color:var(--ink-70); }
+
+  .tags { display:flex; flex-wrap:wrap; gap:9px; margin-top:34px; }
+  .tag { padding:9px 17px; border:1px solid var(--line); border-radius:999px; font-size:14.5px; font-weight:500; color:var(--ink-70); }
+  .not-for { margin-top:34px; padding-top:24px; border-top:1px solid var(--line); font-size:15.5px; color:var(--ink-45); max-width:58ch; }
+  .not-for b { color:var(--ink); font-weight:700; }
+
+  /* courses */
+  .courses { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; margin-top:38px; }
+  .course {
+    padding:22px; border:1px solid var(--line); border-radius:14px; background:var(--card);
+    display:flex; flex-direction:column; gap:8px;
+  }
+  .course.live { border-color:var(--ink); }
+  .course .pill {
+    align-self:flex-start; font-size:10.5px; font-weight:700; letter-spacing:.12em;
+    text-transform:uppercase; padding:4px 9px; border-radius:999px;
+    background:var(--surface); color:var(--ink-45);
+  }
+  .course.live .pill { background:var(--ink); color:var(--page); }
+  .course .logo { width:26px; height:26px; color:var(--ink); opacity:.9; }
+  .course .logo svg { width:100%; height:100%; display:block; fill:currentColor; }
+  .course .top { display:flex; align-items:center; justify-content:space-between; gap:10px; }
+  .course h3 { font-size:1.08rem; letter-spacing:-.02em; }
+  .course p { font-size:14.5px; color:var(--ink-70); line-height:1.55; }
+
+  /* guides */
+  .guides { margin-top:38px; border-top:1px solid var(--line); padding-top:26px; }
+  .guides h3 { font-size:11.5px; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
+               color:var(--ink-45); margin-bottom:16px; }
+  .guides ul { list-style:none; margin:0; padding:0; display:grid; gap:10px; }
+  .guides a { display:inline-flex; align-items:baseline; gap:9px; text-decoration:none;
+              font-size:16px; font-weight:600; letter-spacing:-.015em; color:var(--ink); }
+  .guides a:hover .t { text-decoration:underline; text-underline-offset:3px; }
+  .guides a::before { content:"\2192"; color:var(--sky-deep); font-weight:700; }
+  .guides .d { display:block; font-size:14.5px; font-weight:400; color:var(--ink-70); margin:2px 0 0 22px; }
+
+  /* promise */
+  .promise { background:var(--surface); }
+  .promise blockquote { margin:0; font-size:clamp(1.45rem,3.2vw,2.1rem); font-weight:700; letter-spacing:-.035em; line-height:1.28; max-width:24ch; }
+  .promise .cols { margin-top:48px; display:grid; grid-template-columns:repeat(3,1fr); gap:42px; }
+  @media (max-width:820px) { .promise .cols { grid-template-columns:1fr; gap:28px; } }
+  .promise .cols h3 { font-size:1rem; font-weight:700; margin-bottom:8px; }
+  .promise .cols p { font-size:15px; color:var(--ink-70); }
+
+  /* faq */
+  .faq { max-width:820px; }
+  details { border-top:1px solid var(--line); padding:23px 0; }
+  details:last-of-type { border-bottom:1px solid var(--line); }
+  summary { cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center; gap:24px; font-size:1.08rem; font-weight:700; letter-spacing:-.022em; }
+  summary::-webkit-details-marker { display:none; }
+  summary .pm { flex:none; width:20px; height:20px; position:relative; }
+  summary .pm::before, summary .pm::after { content:""; position:absolute; background:var(--sky-deep); border-radius:2px; left:50%; top:50%; transform:translate(-50%,-50%); }
+  summary .pm::before { width:14px; height:2px; }
+  summary .pm::after { width:2px; height:14px; transition:opacity .18s; }
+  details[open] summary .pm::after { opacity:0; }
+  details p { margin-top:13px; color:var(--ink-70); font-size:15.5px; max-width:64ch; }
+
+  /* closing */
+  .closing { padding:0 0 108px; }
+  .darkpanel {
+    background:#0D0D0D; color:#fff; border-radius:26px; padding:86px 40px; text-align:center;
+    position:relative; overflow:hidden;
+  }
+  @media (max-width:700px) { .darkpanel { padding:56px 22px; border-radius:18px; } }
+  .darkpanel h2 { font-size:clamp(2rem,5vw,3.3rem); max-width:18ch; margin:0 auto 16px; }
+  .darkpanel p.sub2 { color:rgba(255,255,255,.62); margin-bottom:28px; }
+  .darkpanel .capture { max-width:420px; margin:0 auto; }
+  .darkpanel .capture input { background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.2); color:#fff; }
+  .darkpanel .capture input::placeholder { color:rgba(255,255,255,.45); }
+  .darkpanel .btn-dark { background:#fff; color:#0D0D0D; }
+  .darkpanel .capture-note { color:rgba(255,255,255,.5); }
+  .darkpanel .form-msg.warn { color:rgba(255,255,255,.75); }
+  .darkpanel .form-msg.ok { color:var(--sky-soft); }
+  .darkpanel .glow {
+    position:absolute; width:660px; height:660px; border-radius:50%; left:50%; top:-50%;
+    transform:translateX(-50%); pointer-events:none;
+    background:radial-gradient(circle, rgba(27,139,224,.44), transparent 68%);
+  }
+  .darkpanel > * { position:relative; }
+
+  footer { border-top:1px solid var(--line); padding:42px 0 54px; }
+  .foot { display:flex; justify-content:space-between; align-items:flex-end; gap:28px; flex-wrap:wrap; }
+  .foot .tagline { margin-top:12px; font-size:14px; color:var(--ink-45); max-width:34ch; }
+  .foot .meta { font-size:13.5px; color:var(--ink-45); text-align:right; }
+  .disclaimer { margin-top:26px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-45); max-width:76ch; }
+  @media (max-width:640px) { .foot .meta { text-align:left; } }
+
+  /* sub-page layout */
+  .doc { max-width:760px; margin:0 auto; padding:64px 24px 40px; }
+  @media (max-width:640px) { .doc { padding:44px 18px 32px; } }
+  .crumb { font-size:13.5px; color:var(--ink-45); margin-bottom:22px; }
+  .crumb a { color:var(--ink-45); text-decoration:none; }
+  .crumb a:hover { color:var(--ink); text-decoration:underline; }
+  .doc h1 { font-size:clamp(2rem,5vw,3rem); letter-spacing:-.04em; margin-bottom:22px; text-wrap:balance; }
+  .answer {
+    font-size:1.12rem; line-height:1.6; color:var(--ink); background:var(--surface);
+    border-left:3px solid var(--sky); border-radius:0 14px 14px 0; padding:20px 24px; margin-bottom:34px;
+  }
+  .doc h2 { font-size:1.5rem; letter-spacing:-.03em; margin:46px 0 14px; }
+  .doc h3 { font-size:1.12rem; letter-spacing:-.02em; margin:28px 0 8px; }
+  .doc p { color:var(--ink-70); margin-bottom:14px; line-height:1.68; }
+  .doc ul, .doc ol { color:var(--ink-70); padding-left:22px; margin:0 0 16px; line-height:1.68; }
+  .doc li { margin-bottom:8px; }
+  .doc strong { color:var(--ink); font-weight:700; }
+  .doc code {
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.9em;
+    background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:1px 6px;
+  }
+  .doc pre {
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:13.5px; line-height:1.65;
+    background:var(--surface); border:1px solid var(--line); border-radius:12px;
+    padding:18px 20px; overflow-x:auto; margin:0 0 18px; color:var(--ink);
+  }
+  .doc pre code { background:none; border:0; padding:0; font-size:inherit; }
+  .steps { counter-reset:st; list-style:none; padding:0; margin:0 0 18px; }
+  .steps li { counter-increment:st; position:relative; padding-left:40px; margin-bottom:20px; }
+  .steps li::before {
+    content:counter(st); position:absolute; left:0; top:1px; width:26px; height:26px;
+    border-radius:50%; background:var(--ink); color:var(--page);
+    font-size:13px; font-weight:700; display:grid; place-items:center;
+  }
+  .callout { border:1px solid var(--line); border-radius:14px; padding:18px 20px; margin:0 0 18px;
+             background:var(--card); font-size:15px; color:var(--ink-70); }
+  .callout b { color:var(--ink); }
+  .cta-box { margin:52px 0 0; padding:30px; border:1px solid var(--line); border-radius:var(--r);
+             background:var(--surface); text-align:center; }
+  .cta-box h2 { margin:0 0 8px; font-size:1.35rem; }
+  .cta-box p { margin:0 0 20px; }
+  .doc details { border-top:1px solid var(--line); padding:20px 0; }
+  .doc details:last-of-type { border-bottom:1px solid var(--line); }
+  .doc summary { cursor:pointer; list-style:none; font-weight:700; font-size:1.05rem;
+                 letter-spacing:-.02em; display:flex; justify-content:space-between; gap:18px; }
+  .doc summary::-webkit-details-marker { display:none; }
+  .doc summary::after { content:"+"; color:var(--sky-deep); font-weight:400; font-size:1.3rem; line-height:1; }
+  .doc details[open] summary::after { content:"\2212"; }
+  .doc details p { margin:12px 0 0; }
+</style>
+</head>
+<body>
+<header id="hdr"><div class="wrap bar">
+  <a class="mark" href="/" aria-label="easyai home"><svg viewBox="0 7 32 16" fill="none" aria-hidden="true"><circle cx="16" cy="15.2" r="8" fill="var(--sky)"/><path d="M3 20.2H29" stroke="var(--ink)" stroke-width="2.9" stroke-linecap="round"/></svg><span class="name">easy<i>ai</i></span></a>
+  <nav>
+    <a class="link" href="/#how">How it works</a>
+    <a class="link" href="/#kit">The kit</a>
+    <a class="link" href="/#courses">Courses</a>
+    <a class="btn btn-dark btn-sm" href="/#kit">Get the free kit</a>
+  </nav>
+</div></header>
+
+<main class="doc">
+  <p class="crumb"><a href="/">easyai</a> &rsaquo; ChatGPT for lawyers</p>
+  <h1>ChatGPT for lawyers</h1>
+  <div class="answer"><strong>Two rules come before any use case.</strong> It fabricates case citations that look entirely correct, and lawyers have been sanctioned for filing them &mdash; never cite anything you have not pulled up yourself. And client confidences stay out of it until your firm has a policy. Within those limits it is genuinely good at drafting routine correspondence, summarising documents you give it, and turning your own drafting into plain English.</div>
+
+  <h2>Two rules before anything else</h2>
+  <p>
+    Most guides on this topic list use cases and bury the risks at the bottom. For this
+    profession that is the wrong order, because both of the real problems can end a career
+    rather than waste an afternoon.
+  </p>
+  <div class="callout">
+    <b>1. It invents case law, confidently.</b> Ask for authorities and it will produce
+    citations that look perfectly formed &mdash; correct reporter, plausible parties,
+    plausible year &mdash; for cases that do not exist. Lawyers in several jurisdictions have
+    been sanctioned for filing briefs containing them. <strong>Never cite anything it gives
+    you that you have not pulled up yourself in a real database.</strong> Treat every citation
+    from it as a rumour.
+  </div>
+  <div class="callout">
+    <b>2. Client confidences are not yours to paste.</b> Privilege, professional secrecy and
+    your data protection duties do not pause because a tool is convenient. Before any client
+    matter touches it, you need to know what your firm's policy says and what the tool does
+    with what you type. Describing a situation in the abstract is almost always enough.
+  </div>
+
+  <h2>Where it genuinely helps</h2>
+  <p>
+    With those two rules in place, the useful work is the writing and reading that fills a
+    day and bills poorly.
+  </p>
+  <ul>
+    <li><strong>Plain-English versions of your own drafting.</strong> Paste a clause and ask
+      what it means to someone with no legal training. Excellent for client letters, and
+      quietly excellent for spotting a clause that is doing less than you thought.</li>
+    <li><strong>First drafts of routine correspondence.</strong> Chasers, acknowledgements,
+      client updates. The letters you have written a thousand times and still have to write.</li>
+    <li><strong>Reading a long document you did not write.</strong> A counterparty's bundle, a
+      policy, a report. Summarise it, then interrogate it &mdash; it is far better at answering
+      questions about a document you give it than at recalling anything from memory.</li>
+    <li><strong>Turning a messy file into a timeline.</strong> Dates and events in, chronology out.</li>
+    <li><strong>Preparing questions.</strong> For a client meeting, a call, a negotiation.
+      It is good at the obvious question you were about to forget.</li>
+    <li><strong>Second-guessing yourself.</strong> &ldquo;What is the strongest argument against
+      this position?&rdquo; is a genuinely useful prompt.</li>
+  </ul>
+  <p>
+    The pattern: it is reliable when you give it the source material, and unreliable when you
+    ask it to supply the source material.
+  </p>
+
+  <h2>What about Claude for legal work?</h2>
+  <p>
+    Some firms prefer Claude for long documents, and it handles large files comfortably. The
+    two rules above apply identically. No current general-purpose assistant is a substitute
+    for a legal research database, and none of them should be handed privileged material
+    without your firm having decided that first.
+  </p>
+
+  <h2>Try it now: translate a clause into plain English</h2>
+  <p>
+    Our lessons run inside the tool rather than in a video. Paste this in and it walks you
+    through it, one step at a time.
+  </p>
+  <pre><code>You are my patient tutor. I am a lawyer but I am NOT technical.
+Teach me by having me do one thing at a time, not by explaining.
+
+Rules for this whole conversation:
+- ONE step. Then STOP and ask what happened. Wait for my answer.
+- Under 150 words per message.
+- Never suggest I paste client names, matter numbers, or anything
+  that could identify a party. If I do, tell me which parts
+  weren't needed.
+- Never give me case citations. If I ask, remind me to verify
+  authorities in a real database instead.
+
+Lesson: turn a clause I have drafted into something a client
+can actually understand.
+
+1. Ask me to paste ONE clause, with names and identifying
+   details replaced with [PARTY A] and [PARTY B].
+2. Give me a plain-English version aimed at someone with no
+   legal training. Then STOP and ask whether it still says
+   what I meant.
+3. Ask me what a client would most likely misunderstand about it.
+4. Produce a short client-facing explanation I could actually send.
+5. Tell me if anything in the original clause was ambiguous.
+
+Start with step 1. Ask me now, and nothing else.</code></pre>
+  <p>
+    Step 5 is the one that earns its keep. Asking a fresh reader what is ambiguous in your own
+    drafting is a use that has nothing to do with saving time.
+  </p>
+
+  <h2>What it will get wrong</h2>
+  <ul>
+    <li><strong>Any citation, always.</strong> Covered above, and worth repeating because it is
+      the failure that reaches a tribunal.</li>
+    <li><strong>Current law.</strong> It does not reliably know what changed recently, and it
+      will not tell you it does not know.</li>
+    <li><strong>Jurisdiction.</strong> It slides between jurisdictions without noticing. If you
+      do not state yours, assume it has guessed, and often guessed American.</li>
+    <li><strong>Procedure and deadlines.</strong> Never take a limitation period or a filing
+      requirement from it.</li>
+    <li><strong>Confidence.</strong> It is equally fluent when right and when wrong. Fluency
+      is not a signal here.</li>
+  </ul>
+
+<h2>Questions</h2>
+<details open><summary>Can lawyers use ChatGPT?</summary><p>Yes, and many do, but two rules come first. Never cite an authority it produces without pulling the case up yourself in a real database, because it fabricates citations that look correct. And never paste privileged or client-identifying material until your firm has a policy covering it. Within those limits it is genuinely useful for drafting, summarising and plain-English translation.</p></details>
+<details><summary>Does ChatGPT make up case law?</summary><p>Yes. It will produce citations with a correct-looking reporter, plausible parties and a plausible year for cases that do not exist. Lawyers in several jurisdictions have been sanctioned for filing briefs containing fabricated citations. Treat every authority it gives you as a rumour until you have found it yourself.</p></details>
+<details><summary>Is it safe to put client information into ChatGPT?</summary><p>Not without your firm deciding that first. Privilege, professional secrecy and data protection duties all still apply. In practice you rarely need the identifying details: describe the situation with the parties replaced by placeholders and you get the same quality of answer.</p></details>
+<details><summary>What is ChatGPT actually reliable for in legal work?</summary><p>Anything where you supply the source material. Summarising a document you paste in, translating your own drafting into plain English, building a timeline from facts you give it, preparing questions for a meeting. It is reliable reading your material and unreliable recalling its own.</p></details>
+<details><summary>Can it replace legal research?</summary><p>No. It is not a legal research database and does not reliably know current law. Use it to understand a document you already have, not to find out what the law is.</p></details>
+<details><summary>Is Claude better than ChatGPT for legal work?</summary><p>Some firms prefer Claude for long documents and it handles large files comfortably, but the same two rules apply to both. Neither is a substitute for a research database, and neither should see privileged material before your firm has decided that.</p></details>
+<details><summary>Do I have to tell clients I used AI?</summary><p>That depends on your jurisdiction and your retainer, and some regulators have begun issuing guidance. Check your own rules. The practical position is that work you have drafted, checked and taken responsibility for is your work.</p></details>
+  <div class="cta-box">
+    <h2>Want the rest, free?</h2>
+    <p>Six short lessons you paste straight into the tool. One real win in your first ten minutes.</p>
+    <a class="btn btn-dark" href="/#kit">Get the free kit</a>
+  </div>
+</main>
+
+<footer><div class="wrap">
+  <div class="foot">
+    <div>
+      <a class="mark" href="/"><svg viewBox="0 7 32 16" fill="none" aria-hidden="true"><circle cx="16" cy="15.2" r="8" fill="var(--sky)"/><path d="M3 20.2H29" stroke="var(--ink)" stroke-width="2.9" stroke-linecap="round"/></svg><span class="name">easy<i>ai</i></span></a>
+      <p class="tagline">Powerful AI, taught in plain English. For everyone who was never shown.</p>
+    </div>
+    <div class="meta">easyaifornontechies.com<br>&copy; 2026 &middot; hello@easyaifornontechies.com</div>
+  </div>
+  <p class="disclaimer">
+    Independent and not affiliated with, endorsed by, or sponsored by OpenAI, Anthropic,
+    Google or Microsoft. Product names are the trademarks of their respective owners &mdash;
+    we just teach people how to use them.
+  </p>
+</div></footer>
+<script>
+  const hdr=document.getElementById("hdr");
+  const onScroll=()=>hdr.classList.toggle("stuck", window.scrollY>8);
+  onScroll(); window.addEventListener("scroll", onScroll, {passive:true});
+</script>
+</body>
+</html>
